@@ -21,9 +21,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Merge staging -> uat
+      - name: Merge development -> main
         uses: devmasx/merge-branch@master
         with:
           type: now
-          target_branch: uat
+          target_branch: main
           github_token: ${{ github.token }}
