@@ -3,7 +3,7 @@ function init() {
   const ctx = canvas.getContext('2d');
   ctx.strokeStyle = 'black';
 
-  // draw(ctx);
+  draw(ctx);
   // drawSmile(ctx);
   // drawHeart(ctx);
   // drawTriangle(ctx);
