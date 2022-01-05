@@ -1,4 +1,4 @@
-name: CI
+name: GITHUB
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  github-info:
     runs-on: ubuntu-latest
 
     steps:
