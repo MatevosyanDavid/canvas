@@ -10,7 +10,7 @@ jobs:
   github-info:
     runs-on: ubuntu-latest
 
-     with:
+    with:
       github_token: ${{ github.token }}
 
     steps:
