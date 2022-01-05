@@ -18,3 +18,4 @@ jobs:
           git status
           git --version
           git remote -v
+          git branch
