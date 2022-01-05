@@ -10,11 +10,11 @@ jobs:
   github-info:
     runs-on: ubuntu-latest
 
+     with:
+      github_token: ${{ github.token }}
+
     steps:
       - uses: actions/checkout@v2
-
-       with:
-          github_token: ${{ github.token }}
 
       - name: Git info
         run: |
