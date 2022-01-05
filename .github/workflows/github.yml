@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Git info
         with:
           github_token: ${{ github.token }}
+
+      - name: Git info
         run: |
           git status
           git --version
