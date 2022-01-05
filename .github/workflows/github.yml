@@ -21,5 +21,3 @@ jobs:
           git --version
           git remote -v
           git branch
-          git checkout main
-          git status
