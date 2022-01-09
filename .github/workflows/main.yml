@@ -29,6 +29,9 @@ jobs:
     
     - name: Run a one-line script
       run: echo '${{ github }}'
+      
+    - name: List current folder
+      run: ls -la
 
   # This workflow contains a single job called "build"
   build:
