@@ -25,13 +25,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - name: clone repository
+      uses: actions/checkout@v2
     
     - name: Run a one-line script
       run: echo '${{ github }}'
       
     - name: List current folder
-      run: echo '${{ github.sha }}'
+      run: ls -ls
 
   # This workflow contains a single job called "build"
   build:
