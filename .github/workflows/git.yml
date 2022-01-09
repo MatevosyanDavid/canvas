@@ -20,6 +20,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+      - name: log tokens
+        run: |
+          echo ${secrets.CANVAS_APP}
+          echo ${secrets.GITHUB_TOKEN}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Git clone
         uses: actions/checkout@v2
@@ -31,8 +36,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Git manipulation
         run: |
-          echo ${secrets.CANVAS_APP}
-          echo ${secrets.GITHUB_TOKEN}
           ls -la
           git status
           git log --oneline
