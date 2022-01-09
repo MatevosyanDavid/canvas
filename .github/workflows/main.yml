@@ -4,7 +4,7 @@
 name: CI
 env:
   APPLICATION_NAME: "Canvas"
-  PACKAGE_NAME: "Canvas Deploy file"
+  PACKAGE_NAME: "canvas-deploy_file-${{ github.sha }}"
   
 
 # Controls when the workflow will run
@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Run a one-line script
-      run: echo '${env}'
+      run: echo '${github}'
 
   # This workflow contains a single job called "build"
   build:
