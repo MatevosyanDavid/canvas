@@ -23,8 +23,8 @@ jobs:
 
       - name: log tokens
         run: |
-          echo ${secrets.CANVAS_APP}
-          echo ${secrets.GITHUB_TOKEN}
+          echo ${{ secrets.CANVAS_APP }}
+          echo ${{ secrets.GITHUB_TOKEN }}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Git clone
         uses: actions/checkout@v2
