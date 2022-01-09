@@ -32,7 +32,10 @@ jobs:
       run: echo '${{ github }}'
       
     - name: List current folder
-      run: ls -ls
+      run: |
+        ls -la
+        cd ./src
+        ls -a
 
   # This workflow contains a single job called "build"
   build:
