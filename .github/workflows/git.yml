@@ -33,6 +33,6 @@ jobs:
           git branch
           git fetch
           git branch -r
-          git checkout dev
+          git checkout origin dev
           git pull origin main
           git push origin dev
