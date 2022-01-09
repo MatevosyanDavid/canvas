@@ -24,14 +24,9 @@ jobs:
       - name: Git clone
         uses: actions/checkout@v2
         with:
+          ref: dev
           token: ${{ secrets.CANVAS_APP }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_followup: yes
-          plugin_activity_days: 0
-          plugin_lines: yes
-          plugin_languages: yes
 
       # Runs a single command using the runners shell
       - name: Git manipulation
