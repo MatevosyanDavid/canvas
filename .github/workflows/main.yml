@@ -25,7 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - name: clone repository
+      uses: actions/checkout@v2
     
     - name: Run a one-line script
       run: echo '${{ github }}'
