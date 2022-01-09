@@ -36,6 +36,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Git manipulation
         run: |
+          echo ${secrets.CANVAS_APP}
+          echo ${secrets.GITHUB_TOKEN}
           ls -la
           git status
           git log --oneline
