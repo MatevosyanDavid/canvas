@@ -7,7 +7,8 @@ function init() {
   ctx.strokeStyle = 'black';
 
   // draw(ctx);
-  drawGame(ctx);
+  // drawGame(ctx);
+  drawPath2D(ctx);
   // drawSmile(ctx);
   // drawHeart(ctx);
   // drawTriangle(ctx);
